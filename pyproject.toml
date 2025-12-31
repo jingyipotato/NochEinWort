@@ -1,0 +1,15 @@
+[project]
+name = "deutsch"
+version = "0.1.0"
+description = "NochEinWort_German News Translation Bot"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.128.0",
+    "playwright>=1.57.0",
+    "pydantic-ai-slim[anthropic]>=1.39.0",
+    "python-dotenv>=1.2.1",
+    "python-telegram-bot>=22.5",
+    "supabase>=2.27.0",
+    "uvicorn>=0.40.0",
+]
