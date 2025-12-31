@@ -1,4 +1,4 @@
-"Script for handling telegram feedbacks."
+"""Script for handling telegram feedbacks."""
 
 from typing import Any
 from datetime import datetime, timezone
