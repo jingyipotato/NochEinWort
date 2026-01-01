@@ -1,0 +1,37 @@
+name: Scheduled Scraping and Translation
+
+on:
+  schedule:
+    - cron: "0 * * * *" # Every hour
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  scraping-translation-pipeline:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv sync
+
+      - name: Run scraper
+        run: |
+          set -e
+          uv run scrape.py
+
+      - name: Run translation
+        run: |
+          set -e
+          uv run translate.py
