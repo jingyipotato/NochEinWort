@@ -20,18 +20,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Add uv to PATH
+        run: echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
       - name: Install dependencies
-        run: |
-          uv venv
-          source .venv/bin/activate
-          uv sync
+        run: uv sync
 
       - name: Run scraper
-        run: |
-          set -e
-          uv run scrape.py
+        run: uv run scrape.py
 
       - name: Run translation
-        run: |
-          set -e
-          uv run translate.py
+        run: uv run translate.py
