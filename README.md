@@ -69,7 +69,7 @@ curl https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook?url=https://<ngrok-
 
 ### Run Pipeline Scripts Locally
 
-You can run run each step independently:
+You can run each step independently:
 
 ```bash
 # Discover and store new articles
