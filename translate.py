@@ -69,7 +69,10 @@ async def translate_and_summarize(
     Returns:
         The English title, translated content and a short English summary.
     """
-    prompt = prompts.TRANSLATOR_PROMPT
+    prompt = prompts.TRANSLATOR_PROMPT.format(
+        title_de=title_de,
+        content_de=content_de
+    )
     run = await translator.run(prompt)
     return run.output
 
@@ -105,7 +108,10 @@ async def classify_article(
     Returns:
         The classified topic, sentiment and urgency values based on article content.
     """
-    prompt = prompts.CLASSIFICATION_PROMPT
+    prompt = prompts.CLASSIFICATION_PROMPT.format(
+        title_en=title_en,
+        content_en=content_en
+    )
     run = await classifier.run(prompt)
     return run.output
 
