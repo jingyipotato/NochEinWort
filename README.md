@@ -4,7 +4,7 @@
 
 A telegram bot that delivers translated German news article, gathers user feedback, and generates personalized article recommendations.
 
-## For a quick overview before diving into the German article.
+For a quick overview before diving into the German article.
 
 ## Architecture 🔧
 
@@ -132,3 +132,17 @@ deutsch/
 | Infrastructure | ngrok (Local webhook testing) |
 
 ---
+
+## Telegram Inferface
+
+<p align="center">
+  <img src="assets/article_preview.jpg" width="45%" alt="Article Summary">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="assets/like_recommend.jpg" width="45.6%" alt="Liked Article and Recommendations">
+</p>
+
+## UI Interface
+
+<p align="center">
+  <img src="assets/dashboard_ui.png" width="600" alt="Dashboard UI">
+</p>
