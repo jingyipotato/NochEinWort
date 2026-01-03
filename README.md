@@ -4,7 +4,7 @@
 
 A telegram bot that delivers translated German news article, gathers user feedback, and generates personalized article recommendations.
 
----
+## For a quick overview before diving into the German article.
 
 ## Architecture 🔧
 
@@ -21,6 +21,8 @@ A telegram bot that delivers translated German news article, gathers user feedba
 - User feedback is later used to curate content in a reading dashboard
 
 ---
+
+The front end repo is located [here](https://github.com/jingyipotato/NochEinWort-ui).
 
 ## Getting Started
 
@@ -118,15 +120,15 @@ deutsch/
 
 ## Tech stack
 
-| Layer                | Technology                    |
-| -------------------- | ----------------------------- |
-| Messaging            | Telegram Bot API              |
-| Backend API          | FastAPI (Webhook handling)    |
-| Backend Jobs         | Github Actions CI/CD          |
-| Web Scraping         | Playwright (Chromium)         |
-| LLM Processing       | PydanticAI + LLM              |
-| Database             | Supabase (PostgreSQL)         |
-| Frontend (Upcoming!) | React + Next.js               |
-| Infrastructure       | ngrok (Local webhook testing) |
+| Layer          | Technology                    |
+| -------------- | ----------------------------- |
+| Messaging      | Telegram Bot API              |
+| Backend API    | FastAPI (Webhook handling)    |
+| Backend Jobs   | Github Actions CI/CD          |
+| Web Scraping   | Playwright (Chromium)         |
+| LLM Processing | PydanticAI + LLM              |
+| Database       | Supabase (PostgreSQL)         |
+| Frontend       | React + Next.js               |
+| Infrastructure | ngrok (Local webhook testing) |
 
 ---
