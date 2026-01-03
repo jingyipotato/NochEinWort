@@ -136,13 +136,13 @@ deutsch/
 ## Telegram Inferface
 
 <p align="center">
-  <img src="assets/article_preview.jpg" width="45%" alt="Article Summary">
+  <img src="assets/article_preview.jpg" width="33%" alt="Article Summary">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/like_recommend.jpg" width="45.6%" alt="Liked Article and Recommendations">
+  <img src="assets/like_recommend.jpg" width="33.6%" alt="Liked Article and Recommendations">
 </p>
 
 ## UI Interface
 
 <p align="center">
-  <img src="assets/dashboard_ui.png" width="600" alt="Dashboard UI">
+  <img src="assets/dashboard_ui.png" width="900" alt="Dashboard UI">
 </p>
